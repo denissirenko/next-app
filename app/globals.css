@@ -18,10 +18,18 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  padding: 30px 16px;
+  min-height: 100svh;
+}
+
+@layer base {
+  h1 {
+    @apply font-semibold text-xl mb-3;
+  }
 }
